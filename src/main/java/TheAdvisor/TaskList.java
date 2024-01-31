@@ -161,23 +161,4 @@ public class TaskList implements Serializable {
      *
      * @param keyword The keyword the user is looking for from the list.
      */
-    public void findItem(String keyword) throws TheAdvisorException {
-        ArrayList<Integer> indexes = new ArrayList<>();
-
-        for (int i = 0; i < taskList.size(); i++) {
-            if (taskList.get(i).getDescription().contains(keyword)) {
-                indexes.add(i);
-            }
-        }
-
-        if (indexes.size() == 0) {
-            throw new TheAdvisorException("Sorry! There is no such item that fits your description (,,>  <,,)");
-        } else {
-            System.out.println("     Here are the matching tasks in your list:");
-            for (int j = 0; j < indexes.size(); j++) {
-                Task task = taskList.get(indexes.get(j));
-                System.out.println("     " + (j + 1) + ". " + task.toString());
-            }
-        }
-    }
 }

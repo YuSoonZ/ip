@@ -156,7 +156,7 @@ public class TaskList implements Serializable {
     }
 
     /**
-     * Comb through the TaskList to see if there are any tasks in the list that matches the keyword.
+     * Comb through the TaskList to see if there are any tasks in the list that match with the keyword.
      * Print out the matching task(s) if any. Else inform the user that there is no tasks with such keyword.
      *
      * @param keyword The keyword the user is looking for from the list.
